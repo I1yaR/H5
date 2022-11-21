@@ -110,7 +110,31 @@ const i92 = document.querySelector(".i-92")
 const button9 = document.querySelector(".button-9")
 const out9 = document.querySelector(".out-9")
  button9.onclick = function t9 () {
-    for ( let i = i91.value ) {
+    if (i91.value < i92.value) {
+        for ( let i = i91.value ; i <= i92.value; i++){
+        out9.innerHTML += i + " "
+        }
+    }
+    else if (i92.value < i91.value) {
+        for ( let i = i92.value ; i <= i91.value; i++){
+        out9.innerHTML += i + " "
+        }
+    }
+ }
 
+const button10 = document.querySelector(".button-10")
+const out10 = document.querySelector(".out-10")
+ button10.onclick = function t10 () {
+  for ( let i =  1950; i <= 2000; i = i + 2 ) {
+     out10.innerHTML += i + " "
+  }
+ }
+
+const div11 = document.querySelector(".div-11")
+const button11 = document.querySelector(".button11")
+const out11 = document.querySelector(".out-11")
+ button11.onclick = function t11 () {
+    for ( let i = 0; i < div11; i++) {
+        out11.innerHTML  = i + " "
     }
  }
