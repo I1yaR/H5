@@ -75,12 +75,42 @@ button4.onclick = function t4 () {
 }
 
 const button5 = document.querySelector(".button-5")
-const out15 = document.querySelector(".out-5")
+const out5 = document.querySelector(".out-5")
 button5.onclick = function t5 () {
-    for(let i = 1; i < 17;i++) {
+    for (let i = 1; i < 17; i++) {
         if (6 % 3 === 0) {
-            out15.value += i + "_**"
-        } else  {
-            out15.value += i + "_*"
+            out5.value += i + "_**"
+        } else {
+            out5.value += i + "_*"
         }
     }
+}
+
+const button7 = document.querySelector(".button-7")
+const i7 = document.querySelector(".i-7")
+const out7 = document.querySelector(".out-7")
+    button7.onclick = function t7() {
+    for (let i = i7.value; i >= 0; i--) {
+        out7.innerHTML += i + " "
+    }
+    }
+
+const i81 = document.querySelector(".i-81")
+const i82 = document.querySelector(".i-82")
+const button8 = document.querySelector(".button-8")
+const out8 = document.querySelector(".out-8")
+button8.onclick = function t8 () {
+    for (let i = i81.value; i <= i82.value; i++ ) {
+    out8.innerHTML += i + " "
+  }
+}
+
+const i91 = document.querySelector(".i-91")
+const i92 = document.querySelector(".i-92")
+const button9 = document.querySelector(".button-9")
+const out9 = document.querySelector(".out-9")
+ button9.onclick = function t9 () {
+    for ( let i = i91.value ) {
+
+    }
+ }
